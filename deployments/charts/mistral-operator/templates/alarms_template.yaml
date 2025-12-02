@@ -1,4 +1,4 @@
-{{- if .Values.mistralMonitoring.prometheusEnabled }}
+{{- if and .Values.mistralMonitoring.prometheusEnabled (ne .Values.mistralMonitoring.alertsPackVersion "v2")}}
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

@@ -331,7 +331,8 @@ mistralMonitoring:
   monitoringExecutionDelay: '600'
   monitoringEnabled: 'False'
   metricCollectionInterval: '30'
-  prometheusEnabled: true
+  prometheusEnabled: false
+  alertsPackVersion: v1
   securityContext: {}
   priorityClassName: ""
 

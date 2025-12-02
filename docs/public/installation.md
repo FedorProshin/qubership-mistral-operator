@@ -391,6 +391,7 @@ The Mistral Monitoring parameters are specified below.
 |mistralMonitoring.recoveryEnabled|bool|no|'True'|This parameter specifies whether monitoring recovery is enabled.|
 |mistralMonitoring.monitoringExecutionDelay|int|no|'600'|This parameter specifies the monitoring execution delay.|
 |mistralMonitoring.prometheusEnabled|bool|no|false|This parameter specifies whether Prometheus monitoring is enabled.|
+|mistralMonitoring.alertsPackVersion|string|no|v1|This parameter specifies whether to install alerts from static old template - any value except v2 or from mistralMonitoring subchart for v2 value|
 |mistralMonitoring.metricCollectionInterval|int|no|'30'|This parameter specifies the metric collection interval.|
 |mistralMonitoring.priorityClassName|string|no|""|The priority class to be used to assign priority to Mistral Monitoring pod. Priority class should be created beforehand. For more information, refer to https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/.|
 

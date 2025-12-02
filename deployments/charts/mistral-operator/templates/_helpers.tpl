@@ -434,6 +434,11 @@ Find mistral operator image in open source values.
   {{- .Values.operatorImage | sha1sum -}}
 {{- end -}}
 
+{{- define "mistral.operatorImage" -}}
+  {{- .Values.operatorImage | sha1sum -}}
+{{- end -}}
+
+
 
 {{/*
 Find mistral docker image in open source values.
